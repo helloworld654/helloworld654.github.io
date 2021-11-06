@@ -71,10 +71,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hello-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-hexo-setup" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/11/05/hello-test/" class="article-date">
-  <time class="dt-published" datetime="2021-11-05T13:34:51.000Z" itemprop="datePublished">2021-11-05</time>
+    <a href="/2021/11/05/hexo-setup/" class="article-date">
+  <time class="dt-published" datetime="2021-11-05T14:54:15.000Z" itemprop="datePublished">2021-11-05</time>
 </a>
     
   </div>
@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/11/05/hello-test/">hello_test</a>
+      <a class="p-name article-title" href="/2021/11/05/hexo-setup/">hexo-setup</a>
     </h1>
   
 
@@ -93,15 +93,29 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="charapter-1"><a href="#charapter-1" class="headerlink" title="charapter 1"></a>charapter 1</h2><p>this is charapter 1</p>
-<hr>
-<h2 id="charapter-2"><a href="#charapter-2" class="headerlink" title="charapter 2"></a>charapter 2</h2><p>this i charapter 234</p>
-<hr>
+        <h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h3 id="安装-node-js"><a href="#安装-node-js" class="headerlink" title="安装 node.js"></a>安装 node.js</h3><p>1 nodejs.org下载安装，安装后使用 node -v 和 nmp -v 确定都有成功被安装</p>
+<p>2 npm install -g cnmp –registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
+<p>安装cnpm替代npm使用国内镜像源，cnpm -v确定有安装成功</p>
+<h3 id="安装-hexo-cli"><a href="#安装-hexo-cli" class="headerlink" title="安装 hexo-cli"></a>安装 hexo-cli</h3><p>cnpm install -g hexo-cli 安装hexo， hexo -v 验证安装成功</p>
+<h2 id="创建-Hexo-博客"><a href="#创建-Hexo-博客" class="headerlink" title="创建 Hexo 博客"></a>创建 Hexo 博客</h2><p>1 本地创建文件夹 blog</p>
+<p>2 在 blog 文件夹下 hexo init 来初始化 hexo</p>
+<p>3 hexo s 在本地启动 hexo 服务，localhost:4000 访问 hexo 博客，用于本地显示博客样式用</p>
+<p>4 hexo n “first blog name” 新建一篇博客，即新建 first blog name.md 到 source/_posts/下，可以用 typora来编辑 first blog name.md 编辑自己的博客</p>
+<p>5 hexo clean 先清理一下，hexo g 生成博客，hexo s 本地查看博客</p>
+<p>6 github 创建仓库，仓库名字为：githubname.github.io</p>
+<p>7 cnpm install –save hexo-deployer-git</p>
+<p>8 在 _config.yml 最后修改为</p>
+<p>deploy:</p>
+<p> type: git</p>
+<p> repo: <a href="mailto:&#103;&#105;&#116;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;">&#103;&#105;&#116;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;</a>:githubname/githubname.github.io.git (http可能会失败)</p>
+<p> branch: master</p>
+<p>9 hexo d 将 hexo 部署到github上</p>
+<p>10 通过 githubname.github.io 即可访问博客</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/05/hello-test/" data-id="ckvmhpbl40000qgv3c57k18yo" data-title="hello_test" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/05/hexo-setup/" data-id="ckvn56u5c0000pcv351tzgb58" data-title="hexo-setup" class="article-share-link">Share</a>
       
       
       
@@ -152,7 +166,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/05/hello-world/" data-id="ckvmhpbld0001qgv360kc3jfa" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/05/hello-world/" data-id="ckvn56u5h0001pcv3gfz24jsf" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -195,7 +209,7 @@
       <ul>
         
           <li>
-            <a href="/2021/11/05/hello-test/">hello_test</a>
+            <a href="/2021/11/05/hexo-setup/">hexo-setup</a>
           </li>
         
           <li>
