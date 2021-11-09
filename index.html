@@ -174,7 +174,8 @@
       
         <h5 id="PHONY-targeta"><a href="#PHONY-targeta" class="headerlink" title=".PHONY:targeta"></a>.PHONY:targeta</h5><p>伪目标，如果编译会生成目标文件 targeta，则不需要伪目标；</p>
 <p>但是如果编译不会生成目标文件targeta，则需要说明targeta为伪目标（当有一个新的文件targeta比依赖文件新的话，就不会编译）。</p>
-<p><img src="/2021/11/09/Makefile/test.png"></p>
+<h5 id="默认规则"><a href="#默认规则" class="headerlink" title="默认规则"></a>默认规则</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hello_main: hello_main.o hello_func.o</span><br><span class="line">	gcc -o hello_main hello_main.o hello_func.o</span><br><span class="line">#hello_main.o: hello_main.c </span><br><span class="line">#	gcc -c hello_main.c   这两行可以不写</span><br></pre></td></tr></table></figure>
+
 
       
 
